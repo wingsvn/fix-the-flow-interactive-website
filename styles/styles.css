@@ -1,0 +1,237 @@
+@font-face {
+    font-family: AvenirRoman;
+    src: url("../fonts/Avenir-roman.ttf");
+}
+
+@font-face {
+    font-family: AvenirMedium;
+    src: url("../fonts/Avenir-medium.ttf");
+}
+
+@font-face {
+    font-family: AvenirBlack;
+    src: url("../fonts/Avenir\ -black.ttf")
+}
+
+:root {
+    --body-color: #e4e9f7;
+    --text-color: #707070;
+    --accent-color: rgb(90,60,160);
+    --primary-color: #fff;
+    --secundairy-color: #000;
+    --tertairy-color: #ff0000;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #e4e9f7;
+    color: #707070;
+    font-family: AvenirMedium, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5.5rem;
+    background-color: white;
+    border-bottom: 0.01rem solid black;
+    padding: 1rem;
+}
+
+.logo {
+    width: 6rem;  
+}
+
+.top-menu {
+    display: flex;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    background-color: #e4e9f7;
+    border-radius: 2rem;
+    padding: 0.75rem;
+}
+
+.search i {
+    font-size: 1.5rem;
+    color: #707070;
+}
+
+.search input {
+    width: 0rem;
+    background-color: #e4e9f7;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    color:#707070;
+    border-radius: 2rem;
+}
+
+.search:hover input {
+    width: 7rem;
+    height: 3rem;
+    transition: 0.5s ease;
+}
+
+.user-img {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    border-radius: 2rem;
+    /*border: 0.01rem solid black;*/
+}
+
+.user-info {
+    display: flex;
+}
+
+/* navigatie CLOSE */
+
+.side-menu .close {
+    position: fixed;
+    top: 5.5rem;
+    left: 0;
+    z-index: 100;
+    width: 3rem;
+    height: 100vh;
+    background-color: white;
+    opacity: 0;
+}
+
+.side-menu .close .toggle {
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(90,60,160);
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    transform: translateY(7rem);
+    opacity: 0;
+}
+
+.side-menu .close .text {
+    color: #707070;
+    rotate: -90deg;
+    margin-top: 20rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    opacity: 0;
+}
+
+/* navigatie OPEN */
+
+.side-menu {
+    position: fixed;
+    top: 5.5rem;
+    left: 0;
+    z-index: 100;
+    width: 15rem;
+    height: 100vh;
+    background-color: white;
+    opacity: 1;
+}
+
+
+.side-menu .text {
+    height: 3rem;
+    color: #707070;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    margin: 1rem;
+}
+
+.side-menu .toggle {
+    position: absolute;
+    top: 1rem;
+    left: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(90,60,160);
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    transform: rotate(180deg);
+}
+
+.nav-list {
+    width: 15rem;
+}
+
+.nav-item {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    color: #707070;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-item i {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    margin-top: 0.1rem;
+} 
+
+.nav-item:hover {
+    background: red;
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+main {
+    position: absolute;
+    top: 5.5rem;
+    /*left: 3rem;*/
+    left: 15rem;
+    width: calc(100%-15rem);
+    height: 100vh;
+    z-index: 0;
+    margin: 1rem;
+}
+
+/* responsive */
+
+@media screen and (min-width: 30rem) {
+  /*.top-menu {
+        display: flex;
+        justify-content: space-between;
+    }*/
+
+    .search input {
+        width: 7rem;
+    }
+}
