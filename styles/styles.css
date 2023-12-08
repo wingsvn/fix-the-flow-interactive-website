@@ -103,7 +103,92 @@ header {
     display: flex;
 }
 
-/* navigatie CLOSE */
+/* navigatie OPEN */
+
+.side-menu  {
+    position: fixed;
+    top: 5.5rem;
+    left: 0;
+    z-index: 100;
+    width: 14.5rem;
+    height: 100vh;
+    background-color: white;
+    border-right: 0.1rem solid rgb(90,60,160);
+}
+
+.nav-item {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    color: #707070;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-item i {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+} 
+
+.nav-item:hover {
+    background: rgb(90,60,160);
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+.side-close {
+    position: fixed;
+    top: 5.5rem;
+    left: 14.5rem;
+    z-index: 100;
+    width: 2rem;
+    height: 100vh;
+    background-color: white;
+}
+
+.side-close .text {
+    color: #707070;
+    rotate: -90deg;
+    margin-top: 20rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+}
+
+.side-close .toggle {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 100vh;
+    background-color: rgb(90,60,160);
+    color: white;
+    font-size: 1.5rem;
+}
+
+main {
+    position: absolute;
+    top: 5.5rem;
+    /*left: 3rem;*/
+    left: 15rem;
+    width: calc(100%-15rem);
+    height: 100vh;
+    z-index: 0;
+    margin: 1rem;
+}
+
+
+/* navigatie CLOSE 
 
 .side-menu .close {
     position: fixed;
@@ -139,89 +224,10 @@ header {
     margin-top: 20rem;
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
-    opacity: 0;
+    opacity: 0; 
 }
 
-/* navigatie OPEN */
-
-.side-menu {
-    position: fixed;
-    top: 5.5rem;
-    left: 0;
-    z-index: 100;
-    width: 15rem;
-    height: 100vh;
-    background-color: white;
-    opacity: 1;
-}
-
-
-.side-menu .text {
-    height: 3rem;
-    color: #707070;
-    font-size: 1.5rem;
-    letter-spacing: 0.25rem;
-    margin: 1rem;
-}
-
-.side-menu .toggle {
-    position: absolute;
-    top: 1rem;
-    left: 14rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    background-color: rgb(90,60,160);
-    border-radius: 1rem;
-    color: white;
-    font-size: 1.5rem;
-    transform: rotate(180deg);
-}
-
-.nav-list {
-    width: 15rem;
-}
-
-.nav-item {
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    list-style: none;
-}
-
-.nav-item a {
-    display: flex;
-    align-items: center;
-    color: #707070;
-    font-size: 1rem;
-    text-decoration: none;
-}
-
-.nav-item i {
-    margin: 0.5rem;
-    font-size: 1.5rem;
-    margin-top: 0.1rem;
-} 
-
-.nav-item:hover {
-    background: red;
-}
-
-.nav-item a:hover {
-    color: white;
-}
-
-main {
-    position: absolute;
-    top: 5.5rem;
-    /*left: 3rem;*/
-    left: 15rem;
-    width: calc(100%-15rem);
-    height: 100vh;
-    z-index: 0;
-    margin: 1rem;
-}
+*/
 
 /* responsive */
 
