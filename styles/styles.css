@@ -108,22 +108,25 @@ header {
 .side-menu  {
     position: fixed;
     top: 5.5rem;
-    left: 0;
+    left: -14.5rem;
     z-index: 100;
     width: 14.5rem;
     height: 100vh;
-    margin-left: -14.5rem;
     background-color: white;
     border-right: 0.1rem solid rgb(90,60,160);
 }
+
 .side-menu.active {
-    margin-left: 0rem;
+    margin-left: 14.5rem;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
 .nav-item {
     border-radius: 0.5rem;
     padding: 0.5rem;
     list-style: none;
+    margin: 0.2rem;
 }
 
 .nav-item a {
@@ -148,15 +151,38 @@ header {
     color: white;
 }
 
+
+/* dark mode + contrast mode */
+.mode {
+    background-color: #e4e9f7;
+    height: 3.5rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.mode i {
+    font-size: 1.5rem;
+}
+
 .menu-toggle {
     position: fixed;
     top: 5.5rem;
-    left: 14.5rem;
-    margin-left: -14.5rem;
+    left: 0rem;
     z-index: 100;
     width: 2rem;
     height: 100vh;
     background-color: white;
+}
+
+.menu-toggle.active {
+    margin-left: 14.5rem;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    /*display: none;*/
 }
 
 .menu-text {
@@ -165,6 +191,10 @@ header {
     margin-top: 20rem;
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
+}
+
+.menu-text.active {
+    display: none;
 }
 
 .toggle {
@@ -176,17 +206,23 @@ header {
     align-items: center;
     width: 1rem;
     height: 100vh;
+    border: none;
+    outline: none;
     background-color: rgb(90,60,160);
     color: white;
     font-size: 1.5rem;
 }
 
+.toggle.active {
+    rotate: 180deg;
+}
+
 main {
     position: absolute;
     top: 5.5rem;
-    /*left: 3rem;*/
-    left: 15rem;
-    width: calc(100%-15rem);
+    left: 3rem;
+    /*left: 15rem;*/
+    width: calc(100%-3rem);
     height: 100vh;
     z-index: 0;
     margin: 1rem;
@@ -206,3 +242,16 @@ main {
         width: 7rem;
     }
 }
+
+/*
+@media screen and (min-width: 50rem) {
+    .side-menu {
+        margin-left: 0rem;
+    }
+
+    .menu-toggle {
+        margin-left: 14.5rem;
+        display: none;
+    }  
+}
+*/
