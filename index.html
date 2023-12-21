@@ -94,33 +94,178 @@
                 <div class="sun-moon">
                     <i class='bx bx-moon icon moon'></i>
                     <i class='bx bx-sun icon sun'></i>
-                    <span class="darkmode text">Dark mode</span>
+                    <span class="darkmode text">Darkmode</span>
+                    <input type="checkbox">
+                        <div class="switch"></div>
                 </div>
             </li>
-
-            <!--
-            <li class="mode">
-                <label class="switch"> *the box around the slider
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </li>
-            -->
         </ul>
 
         <div class="menu-toggle">
             <div class="menu-text">Menu</div>
-            <button class='bx bx-chevron-right toggle'>klikme</button>
-        </div> 
-        <!--
-        <div class="menu-text">Menu</div>
-        <button lass='bx bx-chevron-right toggle'>klikme</button>
-        -->
+        </div>
+
+        <div class="nav-toggle">
+            <button class='bx bx-chevron-right toggle'></button>
+        </div>
     </nav>
 
     <main>
         <h1>Uitleningen & Verlengen</h1>
+        <h2>in te leveren producten: 13</h2>
 
+        <h2>* = Dit product is momenteel niet beschikbaar en kan niet verlengd worden. </h2>
+
+        <div class="container">
+
+            <h3>Boeken</h3>
+            <div class="carousel">
+                <button id="pre1" class="carousel-btn" aria-label="previous">
+                    <i class='bx bxs-left-arrow'></i>
+                </button>
+
+                <div class="items">
+                    <article class="item">
+                        <img src="https://i.ibb.co/tCpwZHS/cover-beasts-of-a-little-land.jpg" alt="Beasts of a little Land">
+                        <h4>Beasts of a Little Land,</h4>
+                        <h4>Juhea Kim</h4>
+                        <h5>inleverdatum: 01.12.2023</h5>
+                        <h6><span style="color: #FF0000"> -2 dagen</span></h6>
+                        <button>verlengen</button>
+                    </article>
+
+                    <article class="item">
+                        <img src="https://i.ibb.co/Z8VnqZw/cover-holding-up-the-universe.jpg" alt="Holding up the universe">
+                        <h4>Holding up the universe,</h4>
+                        <h4>Jennifer Niven</h4>
+                        <h5>inleverdatum: 01.12.2023</h5>
+                        <h6><span style="color: #FF0000"> -2 dagen</span></h6>
+                        <button>verlengen</button>
+                    </article>
+
+                    <article class="item">
+                        <img src="https://i.ibb.co/V35Kzg2/cover-born-a-crime.jpg" alt="Born A Crime">
+                        <h4>Born A Crime,</h4>
+                        <h4>Trevor Noah</h4>
+                        <h5>inleverdatum: 01.12.2023</h5>
+                        <h6><span style="color: #FF0000">over 4 dagen</span></h6>
+                        <button>verlengen</button>
+                    </article>
+
+                    <article class="item">
+                        <img src="https://i.ibb.co/hCTFCj4/cover-sigh-gone.jpg" alt="Sigh Gone">
+                        <h4>Sigh, Gone,</h4>
+                        <h4>Phuc Tran</h4>
+                        <h5>inleverdatum: 01.12.2023</h5>
+                        <h6><span style="color: #FF0000">over 4 dagen</span></h6>
+                        <button>verlengen</button>
+                    </article>
+
+                    <article class="item">
+                        <img src="https://i.ibb.co/fxdWRv3/cover-pachinko.jpg" alt="Pachinko">
+                        <h4>Pachinko,</h4>
+                        <h4>Min Jin Lee</h4>
+                        <h5>inleverdatum: 21.12.2023</h5>
+                        <h6>over 12 dagen</h6>
+                        <button>verlengen</button>
+                    </article>
+
+                    <article class="item">
+                        <img src="https://i.ibb.co/qjkDDkj/cover-the-monk-of-mokha.jpg" alt="The Monk of Mokha">
+                        <h4>The Monk Of Mokha,</h4>
+                        <h4>Dave Eggers</h4>
+                        <h5>inleverdatum: 21.12.2023</h5>
+                        <h6>over 12 dagen</h6>
+                        <button>verlengen</button>
+                    </article>
+                </div>
+
+                <button id="next1" class="carousel-btn" aria-label="next">
+                    <i class='bx bxs-right-arrow'></i>
+                </button>
+            </div>
+
+            <h3>CD's</h3>
+            <div class="carousel">
+                <button id="pre2" class="carousel-btn" aria-label="previous">
+                    <i class='bx bxs-left-arrow'></i>
+                </button>
+        
+                <div class="items">
+                    <article class="item">
+                        <img src="https://i.ibb.co/529p7yf/cover-cd1.jpg" alt="cover CD">
+                        <h4>De examentraining personenauto</h4>
+                        <h5>inleverdatum: 01.12.2023</h5>
+                        <h6><span style="color: #FF0000">over 4 dagen</span></h6>
+                        <button>verlengen</button>
+                    </article>
+        
+                    <article class="item">
+                        <img src="https://i.ibb.co/pz30c7g/cover-cd2.jpg" alt="cover CD">
+                        <h4>De examentraining personenauto</h4>
+                        <h5>inleverdatum: 21.12.2023</h5>
+                        <h6>over 12 dagen</h6>
+                        <button disabled>*verlengen</button>
+                    </article>
+
+                    <article class="item">
+                        <img src="https://i.ibb.co/RvrL1q7/cover-cd3.jpg" alt="cover CD">
+                        <h4>Examentraining rijbewijs B - auto</h4>
+                        <h5>inleverdatum: 21.12.2023</h5>
+                        <h6>over 12 dagen</h6>
+                        <button disabled>*verlengen</button>
+                    </article>
+                </div>
+
+                <button id="next2" class="carousel-btn" aria-label="next">
+                    <i class='bx bxs-right-arrow'></i>
+                </button>
+            </div>
+            
+            <h3>DVD's</h3>
+            <div class="carousel">
+                <button id="pre3" class="carousel-btn" aria-label="previous">
+                    <i class='bx bxs-left-arrow'></i>
+                </button>
+            
+                <div class="items">
+                    <article class="item">
+                        <img src="https://i.ibb.co/d530zYs/cover-dvd3.jpg" alt="cover DVD">
+                        <h4>Kikker & Haas</h4>
+                        <h5>inleverdatum: 21.12.2023</h5>
+                        <h6><span style="color: #FF0000">over 4 dagen</span></h6>
+                        <button>verlengen</button>
+                    </article>
+
+                    <article class="item">
+                        <img src="https://i.ibb.co/3dChbXr/cover-dvd4.webp" alt="cover DVD">
+                        <h4>Barbapapa S1</h4>
+                        <h5>inleverdatum: 21.12.2023</h5>
+                        <h6><span style="color: #FF0000">over 4 dagen</span></h6>
+                        <button>verlengen</button>
+                    </article>
+
+                    <article class="item">
+                        <img src="https://i.ibb.co/7Kd0rMp/cover-dvd1.jpg" alt="cover DVD">
+                        <h4>Piet Piraat: 3 DVD box</h4>
+                        <h5>inleverdatum: 01.12.2023</h5>
+                        <h6>over 12 dagen</h6>
+                        <button>verlengen</button>
+                    </article>
+
+                    <article class="item">
+                        <img src="https://i.ibb.co/YfyvCx4/cover-dvd2.jpg" alt="cover DVD">
+                        <h4>Pieter Post: 3 DVD </h4>
+                        <h5>inleverdatum: 01.12.2023</h5>
+                        <h6>over 12 dagen</h6>
+                        <button>verlengen</button>
+                    </article>
+                </div>
+                <button id="next3" class="carousel-btn" aria-label="next">
+                    <i class='bx bxs-right-arrow'></i>
+                </button>
+            </div>
+        </div>
         
     </main>
     

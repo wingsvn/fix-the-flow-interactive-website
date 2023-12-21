@@ -20,7 +20,7 @@ toggle.addEventListener('click', function(){
     nav.classList.toggle('active'), //hiermee klapt de navigatiebar met links open
     div.classList.toggle('active') //hiermee verschuift de toggle ook mee naar rechts
     toggle.classList.toggle('active') //hiermee roteert de toggle 180deg, zodat het ook duidelijk is dat het weer inklapbaar is
-    
+
     
     // nav.classList.toggle('side-menu.active') dit werkt niet,waarom?
 });

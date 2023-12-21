@@ -49,7 +49,7 @@ header {
     width: 100%;
     height: 5.5rem;
     background-color: white;
-    border-bottom: 0.01rem solid black;
+    border-bottom: 0.01rem solid  rgb(90,60,160);
     padding: 1rem;
 }
 
@@ -59,6 +59,7 @@ header {
 
 .top-menu {
     display: flex;
+    align-items: flex-end;
 }
 
 .search {
@@ -113,7 +114,6 @@ header {
     width: 14.5rem;
     height: 100vh;
     background-color: white;
-    border-right: 0.1rem solid rgb(90,60,160);
 }
 
 .side-menu.active {
@@ -156,7 +156,7 @@ header {
 .mode {
     background-color: #e4e9f7;
     height: 3.5rem;
-    margin: 0.2rem;
+    margin: 0.5rem;
     border-radius: 0.5rem;
     padding: 0.5rem;
     font-size: 1rem;
@@ -164,9 +164,48 @@ header {
     align-items: center;
 }
 
-.mode i {
+.moon, .sun {
     font-size: 1.5rem;
 }
+
+.sun-moon .sun {
+    display: none;
+}
+
+/* trial */
+
+/*styling checkbox */
+input[type="checkbox"] {
+    position: relative;
+    width: 3rem;
+    height: 1.5rem;
+    appearance: none;
+    background-color: rgb(90,60,160);
+    border-radius: 2rem;
+}
+
+/* styling checkbox toggled */
+input:checked[type="checkbox"] {
+    background-color:#707070;
+}
+/* toggle normal*/
+input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: scale(0.75);
+    background-color: #fff;
+    border-radius: 2rem;
+}
+
+/* toggle toggled:darkmode*/
+input:checked[type="checkbox"]:before {
+    transform: 
+        translateX(1.5rem)
+        scale(0.75);
+}
+
 
 .menu-toggle {
     position: fixed;
@@ -178,11 +217,12 @@ header {
     background-color: white;
 }
 
+
 .menu-toggle.active {
     margin-left: 14.5rem;
     transition-duration: 0.5s;
     transition-timing-function: ease;
-    /*display: none;*/
+    display: none;
 }
 
 .menu-text {
@@ -193,18 +233,14 @@ header {
     letter-spacing: 0.25rem;
 }
 
-.menu-text.active {
-    display: none;
-}
-
 .toggle {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 5.5rem;
     left: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1rem;
+    width: 1.5rem;
     height: 100vh;
     border: none;
     outline: none;
@@ -214,7 +250,10 @@ header {
 }
 
 .toggle.active {
-    rotate: 180deg;
+    margin-left: 12.5rem;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    /*rotate: 180deg;*/
 }
 
 main {
@@ -222,11 +261,107 @@ main {
     top: 5.5rem;
     left: 3rem;
     /*left: 15rem;*/
-    width: calc(100%-3rem);
+    width: calc(100% - 5rem);
     height: 100vh;
-    z-index: 0;
-    margin: 1rem;
+    margin: 2rem;
 }
+
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 0.8rem;
+}
+
+.container {
+    margin-top: 2rem; 
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.carousel {
+    display: flex;
+    margin: 0 1rem 0 1rem;
+}
+
+.carousel-btn {
+    background-color: #fff;
+    color: #707070;
+    font-size: 0.8rem;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    flex-shrink: 0;
+    margin-top: 12rem;
+}
+
+.carousel-btn:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.carousel-btn:active {
+    font-size: 1rem;
+}
+
+.items {
+    display: flex;
+    overflow: scroll;
+}
+
+.items::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+    margin: 1rem;
+    text-align: center;
+    width: 15rem;
+}
+
+img, h5, .item button {
+    margin-top: 1rem;
+}
+
+.item img {
+    width: 15rem;
+    height: 22rem;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.3rem #d9d9d9;
+}
+
+.item button {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 7rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #fff;
+    color: #707070;
+}
+
+.item button:hover {
+    background-color: #444444;
+    color: #fff;
+}
+
+.item button:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.item button:disabled {
+    color: #D8D9D9;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 
 
 
